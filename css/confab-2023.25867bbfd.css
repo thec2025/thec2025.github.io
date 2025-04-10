@@ -78,7 +78,12 @@ ul {
   font-size: 1.2em;
   text-align: center; 
 }
-
+.fellow_img1 {
+  width: 150px; 
+  height: auto; 
+  border-radius: 200px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
 .fellow_img {
   width: 250px; 
   height: auto; 
@@ -1460,6 +1465,7 @@ textarea.w-input, textarea.w-select {
   display: block;
 }
 
+
 .w-richtext figure.w-richtext-align-fullwidth > div {
   padding-bottom: inherit;
   display: inline-block;
@@ -1578,6 +1584,46 @@ textarea.w-input, textarea.w-select {
   top: 0;
   left: auto;
 }
+.two-column-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.scomite{
+  list-style: none;
+}
+
+.column {
+  flex: 1 1 45%;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.left-column {
+  background-color: #fff;
+}
+
+.right-column {
+  background-color: #fafafa;
+}
+
+
+@media (max-width: 768px) {
+  .two-column-section {
+    flex-direction: column;
+  }
+
+  .column {
+    width: 100%;
+  }
+}
+
 
 .w-nav-button {
   float: right;
@@ -3551,7 +3597,7 @@ figcaption {
   margin-top: 3em;
 }
 .img_org{
-  width: 250px; 
+  width: 150px; 
   height: auto; 
   border-radius: 200px; 
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
@@ -6181,7 +6227,9 @@ figcaption {
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr;
 }
-
+.footer_head{
+  color:white;
+}
 .getting-around-illustrations {
   color: #78c6d8;
   width: 100px;
@@ -7596,4 +7644,50 @@ button[type="submit"]:hover {
     height: auto; /* Adjust height as needed */
 }
 
+.dropdown-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+details {
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+summary {
+  font-weight: bold;
+  font-size: 1.2em;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.arrow {
+  border: solid #333;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 4px;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+  margin-left: 10px;
+}
+
+.rotate {
+  transform: rotate(135deg);
+}
+
+ul {
+  margin-top: 10px;
+  padding-left: 20px;
+  font-size:  0.8em;
+}
 
