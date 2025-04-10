@@ -2,7 +2,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   font-family: sans-serif;
-  scroll-behavior: smooth; /* Enables smooth scrolling */
+  scroll-behavior: smooth;
 
 }
 
@@ -84,6 +84,14 @@ ul {
   border-radius: 200px; 
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
+.fellows-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  padding: 20px;
+}
+
 .fellow_img {
   width: 250px; 
   height: auto; 
@@ -170,6 +178,10 @@ body {
   .person{
     flex: 1 1 100%; 
   }
+}
+
+.date-row{
+  font-size: 1.2em;
 }
 
 img {
@@ -4604,16 +4616,19 @@ figcaption {
   z-index: 997;
   background-color: var(--off-white);
   color: var(--confab-2023-medium-navy);
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  width: 100%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 .icon i{
   color:white;
   font-size:xx-large;
 
 }
+
 .icon a{
   text-decoration: none;
 }
@@ -4622,8 +4637,8 @@ figcaption {
   justify-content: space-between;
 }
 .carousel-container {
-  width: 80vw;
-  height: 67vh;
+  width: 70vw;
+  height: 60vh;
   margin: auto;
   overflow: hidden;
   border-radius: 10px;
