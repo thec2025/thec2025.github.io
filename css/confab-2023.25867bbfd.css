@@ -12,19 +12,6 @@ body {
   height: 100%;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block;
-}
-
-audio, canvas, progress, video {
-  vertical-align: baseline;
-  display: inline-block;
-}
-
-audio:not([controls]) {
-  height: 0;
-  display: none;
-}
 .register_nav{
   color:white;
   background-color:grey;
@@ -41,9 +28,6 @@ audio:not([controls]) {
 }
 
 
-[hidden], template {
-  display: none;
-}
 .fellow_div {
   width: calc(33.333% - 20px); /* Exactly 3 in a row with gap */
   box-sizing: border-box;
