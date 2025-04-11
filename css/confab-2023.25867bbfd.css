@@ -106,7 +106,7 @@ ul {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 .fellow_img_big {
-  width: 350px; 
+  width: 250px; 
   height: auto; 
   border-radius: 200px; 
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
@@ -3660,6 +3660,12 @@ figcaption {
 }
 .img_org{
   width: 150px; 
+  height: auto; 
+  border-radius: 200px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+.img_org_biggest{
+  width: 350px; 
   height: auto; 
   border-radius: 200px; 
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
