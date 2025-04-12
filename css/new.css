@@ -1,26 +1,117 @@
-
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   font-family: sans-serif;
   scroll-behavior: smooth;
+}
 
+.head_date {
+  z-index: 5;
+  color: white;
+  align-self: left;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 1px var(--confab-2023-navy-darker);
+  margin-top: 1em;
+  font-family: Gilroy, Arial, sans-serif;
+  font-size: 2.5vw;
+  font-weight: 600;
+  position: relative;
 }
 
 body {
   border: 0;
   margin: 0;
   height: 100%;
+  color: #333;
+  background-color: #fff;
+  min-height: 100%;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
 }
 
-main-nav-section {
-z-index: 997;
-background-color: var(--off-white);
-color: var(--confab-2023-medium-navy);
-position: fixed;
-top: 0;
-left: 0;
-right: 0;
-width: 100%;
-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+.register_nav {
+  color: white;
+  background-color: #F04E30;
+  padding: 15px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.register_nav:hover {
+  background-color: #D53B20;
+  color: white;
+}
+
+.register {
+  color: white;
+  background-color: #1a2130;
+  padding: 15px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.register_head {
+  z-index: 5;
+  color: white;
+  background-color: #1a2130;
+  padding: 15px;
+  margin: 20px;
+  border-radius: 10px;
+  position: relative;
+  font-weight: 400;
+}
+
+.fellows {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.fellow_div {
+  width: calc(33.333% - 20px);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.fellow_img {
+  width: 250px;
+  height: auto;
+  border-radius: 200px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.fellow_img_big {
+  width: 350px;
+  height: auto;
+  border-radius: 200px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.fellow_imgtxt {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+#scrolling_text {
+  background-color: rgb(255, 255, 255);
+  align-content: center;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+}
+
+@media (max-width: 768px) {
+  .fellow_div {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .fellow_div {
+    flex: 1 1 100%;
+  }
 }
