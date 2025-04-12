@@ -12,25 +12,16 @@ body {
   height: 100%;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block;
-}
-
-audio, canvas, progress, video {
-  vertical-align: baseline;
-  display: inline-block;
-}
-
-audio:not([controls]) {
-  height: 0;
-  display: none;
-}
 .register_nav{
   color:white;
-  background-color:grey;
+  background-color:#F04E30;
   padding:15px;
   margin:20px;
   border-radius:10px;
+}
+.register_nav:hover {
+  background-color: #D53B20; 
+  color:white;
 }
 .register{
   color:white;
@@ -41,9 +32,6 @@ audio:not([controls]) {
 }
 
 
-[hidden], template {
-  display: none;
-}
 .fellow_div {
   width: calc(33.333% - 20px); /* Exactly 3 in a row with gap */
   box-sizing: border-box;
@@ -82,9 +70,10 @@ ul {
 
 
 .fellow_imgtxt {
-  font-size: 1.2em;
+  font-size: 1.2 em;
   text-align: center; 
 }
+
 .fellow_img1 {
   width: 150px; 
   height: auto; 
@@ -106,7 +95,7 @@ ul {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 .fellow_img_big {
-  width: 250px; 
+  width: 350px; 
   height: auto; 
   border-radius: 200px; 
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
@@ -1622,17 +1611,17 @@ textarea.w-input, textarea.w-select {
 .column {
   flex: 1 1 45%;
   padding: 20px;
-  background-color: #f5f5f5;
+
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .left-column {
-  background-color: #fff;
+  background-color:  #e0e0e0;
 }
 
 .right-column {
-  background-color: #fafafa;
+  background-color:  #e0e0e0;
 }
 
 
@@ -3140,7 +3129,7 @@ h6 {
   font-weight: 700;
 }
 
-p {
+.p1{
   margin-top: 0;
   margin-bottom: 1.5em;
   font-size: 1.3em;
@@ -7837,6 +7826,5 @@ summary::-webkit-details-marker {
 ul {
   margin-top: 10px;
   padding-left: 20px;
-  font-size:  0.8em;
+  font-size:  1 em;
 }
-
