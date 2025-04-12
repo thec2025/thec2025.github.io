@@ -5,6 +5,19 @@ html {
   scroll-behavior: smooth;
 
 }
+.head_date{
+  z-index: 5;
+  color:white;
+  align-self: left;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 1px var(--confab-2023-navy-darker);
+  margin-top: 1em;
+  font-family: Gilroy, Arial, sans-serif;
+  font-size: 2.5vw;
+  font-weight: 600;
+  position: relative;
+
+}
 
 body {
   border: 0;
@@ -29,6 +42,18 @@ body {
   padding:15px;
   margin:20px;
   border-radius:10px;
+
+}
+.register_head{
+  z-index: 5;
+  color:white;
+  background-color: #1a2130;
+  padding:15px;
+  margin:20px;
+  border-radius:10px;
+
+  position: relative;
+  font-weight: 400;
 }
 
 
@@ -4978,7 +5003,7 @@ figcaption {
   letter-spacing: 1px;
   text-shadow: 1px 1px 1px var(--confab-2023-navy-darker);
   margin-top: 1em;
-  margin-bottom: 10em;
+  margin-bottom: 1em;
   font-family: Gilroy, Arial, sans-serif;
   font-size: 2.5vw;
   font-weight: 600;
