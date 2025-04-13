@@ -57,20 +57,40 @@ body {
 }
 
 
-.fellow_div {
-  width: calc(33.333% - 20px); /* Exactly 3 in a row with gap */
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 20px;
+.fellows {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 20px 0;
+  justify-content: center;
 }
 
-.fellows {
+.fellow_div {
+  text-align: center;
+}
+
+.circle-bg {
+  width: 170px;
+  height: 170px;
+  background-color: #f0f0f0;
+  border-radius: 50%;
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  align-items: center;
   justify-content: center;
+  margin: 0 auto 10px auto;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.circle-bg:hover {
+  background-color: #d6e4ff; /* light blue on hover */
+  transform: scale(1.05);
+}
+
+.fellow_img1 {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 details {
@@ -99,12 +119,7 @@ ul {
   text-align: center; 
 }
 
-.fellow_img1 {
-  width: 150px; 
-  height: auto; 
-  border-radius: 200px; 
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-}
+]
 .fellows-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
