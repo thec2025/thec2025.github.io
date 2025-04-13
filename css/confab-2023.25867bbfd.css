@@ -4769,7 +4769,7 @@ figcaption {
   text-align: center;
   box-sizing: border-box;
   overflow: hidden;
-  margin: 0;
+  margin: 0 auto;
 }
 
 
