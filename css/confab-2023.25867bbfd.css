@@ -4756,25 +4756,24 @@ figcaption {
   }
 }
 
-
-.abstract_header{
+.abstract_header {
   width: 100%;
-  background-color:grey;
-  z-index: 5;
-  color:#5be5b9;
-  letter-spacing: 1px;
-  text-shadow: 1px 1px 1px var(--confab-2023-navy-darker);
-  margin-top: 3em;
-  margin-bottom: 3em;
+  height: 90%;
+  color:#F9E795;
+  background-color: #F96167;
   font-family: Gilroy, Arial, sans-serif;
   font-size: 1.5vw;
-  font-weight: 600;
-  line-height: 1.5em;
   position: relative;
-  padding:8vw;
-  align-content: center;
-  justify-content: center;
+  margin-top: 100px;
+  padding: 1.5vw 2vw;
+  text-align: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 0;
 }
+
+
+
 .btns {
   display: flex;
   justify-content: center;
