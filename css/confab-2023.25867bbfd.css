@@ -4936,7 +4936,7 @@ figcaption {
   z-index: 5;
   color: #cb2d2dd1;
   letter-spacing: 1px;
-  text-shadow: 1px 1px 1px var(--confab-2023-navy-darker);
+
   margin-top: 4.2em;
   margin-bottom: 0.1em;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -4952,7 +4952,6 @@ figcaption {
   z-index: 5;
   color:#5be5b9;
   letter-spacing: 1px;
-  text-shadow: 1px 1px 1px var(--confab-2023-navy-darker);
   margin-top: 1em;
   margin-bottom: 1em;
   font-family: Gilroy, Arial, sans-serif;
@@ -4964,14 +4963,11 @@ figcaption {
 
 .home-hero-h3 {
   z-index: 5;
-  color: #cb2d2dd1;
+  color: #af2727d1;
   letter-spacing: 1px;
-  text-shadow: 1px 1px 1px var(--confab-2023-navy-darker);
-  margin-top: 1em;
-  margin-bottom: 1em;
   font-family: Gilroy, Arial, sans-serif;
-  font-size: 1.5vw;
-  font-weight: 600;
+  font-size: 1.6vw;
+  font-weight: 750;
   line-height: 1.2em;
   position: relative;
 }
@@ -4979,7 +4975,6 @@ figcaption {
   z-index: 5;
   color:#000000;
   letter-spacing: 1px;
-  text-shadow: 1px 1px 1px var(--confab-2023-navy-darker);
   margin-top: 1em;
   margin-bottom: 1em;
   font-family: Gilroy, Arial, sans-serif;
