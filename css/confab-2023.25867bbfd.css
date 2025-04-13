@@ -4757,7 +4757,41 @@ figcaption {
 }
 
 
-
+.abstract_header{
+  width: 100%;
+  background-color:grey;
+  z-index: 5;
+  color:#5be5b9;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 1px var(--confab-2023-navy-darker);
+  margin-top: 3em;
+  margin-bottom: 3em;
+  font-family: Gilroy, Arial, sans-serif;
+  font-size: 1.5vw;
+  font-weight: 600;
+  line-height: 1.5em;
+  position: relative;
+  padding:8vw;
+  align-content: center;
+  justify-content: center;
+}
+.btns {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+.btns a {
+  background:#1a2130;;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+}
+.logo_img{
+  width:25%;
+  height: auto;
+}
 .full-nav-wrapper {
   flex-direction: column;
   display: flex;
