@@ -57,41 +57,7 @@ body {
 }
 
 
-.fellows {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-  padding: 20px 0;
-  justify-content: center;
-}
 
-.fellow_div {
-  text-align: center;
-}
-
-.circle-bg {
-  width: 170px;
-  height: 170px;
-  background-color: #f0f0f0;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 10px auto;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.circle-bg:hover {
-  background-color: #d6e4ff; /* light blue on hover */
-  transform: scale(1.05);
-}
-
-.fellow_img1 {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  object-fit: cover;
-}
 
 .cor-fellow-container {
   display: flex;
