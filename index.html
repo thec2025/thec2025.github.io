@@ -4,10 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Education 4.0 International Conference</title>
-  <link href="css/confab-2023.25867bbfd.css" rel="stylesheet" type="text/css"> 
+  <link href="css/new.css" rel="stylesheet" type="text/css"> 
   <link href="images/logo.png" rel="shortcut icon" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"rel="stylesheet"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
 </head>
 
 <body>
@@ -15,9 +16,12 @@
     <div data-animation="default" class="navbar w-nav" data-easing2="ease-out" data-easing="ease-in-out" data-collapse="medium" role="banner" data-no-scroll="1" data-duration="400" id="top">
       <div class="container main-nav">
         <a href="https://www.thapar.edu/" aria-current="page" class="brand w-nav-brand w--current">
-          <img src="images/logo.png"  alt="Confab logo" class="logoimage">
+          <img src="images/logo.png" alt="Confab logo" class="logoimage">
         </a>
-        <nav role="navigation" class="nav-menu w-nav-menu">
+        
+        <div class="w-nav-button" id="hamburger">&#9776;</div>
+
+        <nav role="navigation" class="nav-menu w-nav-menu" id="navMenu">
           <a href="#home" class="main-nav-link w-nav-link">Home</a>
           <a href="#about" class="main-nav-link w-nav-link">About</a>
           <a href="#Organizers" class="main-nav-link w-nav-link">Our Team</a>
@@ -25,11 +29,22 @@
           <a href="#contact" class="main-nav-link w-nav-link">Contact Us</a>
           <a href="abstract.html" class="main-nav-link w-nav-link">Abstract / Submissions</a>
           <a href="" class="main-nav-link w-nav-link">Schedule</a>
-          <a href="register.html"><button  class="main-nav-link w-nav-link register_nav">Register</button></a>
+          <a href="register.html">
+            <button class="main-nav-link w-nav-link register_nav">Register</button>
+          </a>
         </nav>     
       </div>
     </div>
   </div>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('navMenu');
+
+    hamburger.addEventListener('click', () => {
+      navMenu.style.display = navMenu.style.display === 'block' ? 'none' : 'block';
+    });
+  </script>
+  
   <div style="width: 100%; height: 100%; position: relative; background: #FFEBD9; overflow: hidden; border-top-left-radius: 25px; border-top-right-radius: 25px; border-bottom-right-radius: 25px; outline: 6px rgba(54, 88, 111, 0) solid; outline-offset: -6px">
     <img style="width: 1082.08px; height: 1203.66px; left: -164.85px; top: -205.66px; position: absolute; border-radius: 9999px" src="images/Ellipse 3.svg" />
     <div style="width: 469.43px; height: 409.94px; left: -220px; top: 640.02px; position: absolute; transform: rotate(-6deg); transform-origin: top left; background: rgba(204, 212, 212, 0.56); border-radius: 9999px"></div>
@@ -44,7 +59,7 @@
             Transforming Higher <br> Education For Future: <br> Education 4.0
           </div>
           <div style="background: #AC401E; padding: 12px 20px; border-radius: 20px;">
-            <span style="color: #FFEBD9; font-size: 22px; font-weight: 700;">26<sup>th</sup> - 27<sup>th</sup> Sept 2025</span>
+            <span style="color: #FFEBD9; font-size: 22px; font-weight: 700;">26 - 27 Sept 2025</span>
           </div>
         </div>
       </div>
@@ -71,7 +86,6 @@
           <a href="images/Objectives.pdf" target="_blank">Conference Objectives</a>
           <a href="images/outcome.pdf" target="_blank">Expected Outcomes</a>
           <a href="images/THEFE 4.0.pdf" target="_blank"> Call for papers </a>
-      
         </div>
       </div>
     </div>
@@ -380,7 +394,7 @@
                                     <img class="cor-fellow-img" src="images/tp_singh_40992.jpg" alt="Dr. T.P Singh">
                                 </div>
                                 <div class="cor-fellow-info">
-                                    <p><strong>Dr. T.P Singh<br>Professor, OM</strong></p>
+                                    <p><strong>Dr. T.P Singh<br>Professor, MED</strong></p>
                                 </div>
                             </div>
         
@@ -425,7 +439,7 @@
                                     <img class="cor-fellow-img" src="images/Dr.GK.JPG" alt="Dr. Gurvinder Kaur">
                                 </div>
                                 <div class="cor-fellow-info">
-                                    <p><strong>Dr. Gurvinder Kaur<br>Associate Dean of Outreach</strong></p>
+                                    <p><strong>Dr. Gurvinder Kaur<br>Associate Dean of Outreach<br>SHSS</strong></p>
                                 </div>
                             </div>
         
@@ -443,7 +457,7 @@
                                     <img class="cor-fellow-img" src="images/scbose.jpg" alt="Dr. SC Bose">
                                 </div>
                                 <div class="cor-fellow-info">
-                                    <p><strong>Dr. SC Bose<br>Associate Professor, TQM</strong></p>
+                                    <p><strong>Dr. SC Bose<br>Associate Professor, SOM</strong></p>
                                 </div>
                             </div>
         
@@ -475,26 +489,8 @@
                             </div>
         
                         </div>
-                        <li class="li_1"><strong>UQ Fellows</strong></li></ul>
+                        <li class="li_1"><strong>University of Queensland Fellows</strong></li></ul>
                         <div class="cor-fellow-container">
-        
-                            <div class="cor-fellow-card">
-                                <div class="cor-img-wrapper">
-                                    <img class="cor-fellow-img" src="images/DR. GK.JPG" alt="Dr. Gagandeep Kaur">
-                                </div>
-                                <div class="cor-fellow-info">
-                                    <p><strong>Dr. Gagandeep Kaur<br>Associate Head, EIED</strong></p>
-                                </div>
-                            </div>
-        
-                            <div class="cor-fellow-card">
-                                <div class="cor-img-wrapper">
-                                    <img class="cor-fellow-img" src="images/Dr. Amanpreet.jpg" alt="Dr. Amanpreet Kaur">
-                                </div>
-                                <div class="cor-fellow-info">
-                                    <p><strong>Dr. Amanpreet Kaur<br>Assistant Professor, ECED</strong></p>
-                                </div>
-                            </div>
         
                             <div class="cor-fellow-card">
                                 <div class="cor-img-wrapper">
