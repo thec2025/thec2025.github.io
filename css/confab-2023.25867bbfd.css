@@ -57,40 +57,77 @@ body {
 }
 
 
-.fellows {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+
+
+.cor-fellow-container {
+  display: flex;
+  flex-wrap: wrap;
   gap: 30px;
-  padding: 20px 0;
-  justify-content: center;
+  justify-content: space-between;
 }
 
-.fellow_div {
-  text-align: center;
+.cor-fellow-card {
+  display: flex;
+  align-items: center;
+  width: calc(33.33% - 20px);
+  box-sizing: border-box;
+  position: relative;
+  margin-bottom: 30px; /* Spacing between rows */
 }
 
-.circle-bg {
-  width: 170px;
-  height: 170px;
-  background-color: #f0f0f0;
+.cor-img-wrapper {
+  width: 15vmin;  /* Dynamic width, based on viewport */
+  height: 15vmin; /* Dynamic height, based on viewport */
   border-radius: 50%;
+  background-color: #eaeaea;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 10px auto;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  overflow: hidden;
+  z-index: 2;
+  flex-shrink: 0;
+  margin-right: -20px; /* Slight overlap into the card */
 }
 
-.circle-bg:hover {
-  background-color: #d6e4ff; /* light blue on hover */
-  transform: scale(1.05);
-}
-
-.fellow_img1 {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
+.cor-fellow-img {
+  width: 80%;  /* The image size will always be slightly smaller than its container */
+  height: 80%;
   object-fit: cover;
+  border-radius: 50%;
+}
+
+.cor-fellow-info {
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 15px 20px 15px 35px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  z-index: 1;
+  flex: 1;
+  text-align: right ;  
+  margin-left: -50px; 
+}
+
+@media screen and (max-width: 768px) {
+  .cor-fellow-card {
+    width: calc(50% - 20px);  /* Two columns on smaller screens */
+  }
+
+  .cor-img-wrapper {
+    width: 25vmin;
+    height: 25vmin;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cor-fellow-card {
+    width: 100%;  /* One column on very small screens */
+  }
+
+  .cor-img-wrapper {
+    width: 30vmin;
+    height: 30vmin;
+  }
 }
 
 details {
