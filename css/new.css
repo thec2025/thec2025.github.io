@@ -109,6 +109,9 @@ summary {
   font-size: 1.1em;
   cursor: pointer;
 }
+.rotate {
+  transform: rotate(90deg);
+}
 
 ul {
   margin-top: 5px;
@@ -382,7 +385,7 @@ h3 {
 .p1{
   margin-top: 0;
   margin-bottom: 1.5em;
-  font-size: 1.3em;
+  font-size: 1.1em;
   line-height: 1.5em;
 }
 
