@@ -12,25 +12,35 @@
 </head>
 <body>
 <section>
-    <div class="main-nav-section" style="position: sticky;">
-        <div data-animation="default" class="navbar w-nav" data-easing2="ease-out" data-easing="ease-in-out" data-collapse="medium" role="banner" data-no-scroll="1" data-duration="400" id="top">
-          <div class="container main-nav">
-            <a href="https://www.thapar.edu/" aria-current="page" class="brand w-nav-brand w--current">
-              <img src="images/logo.png"  alt="Confab logo" class="logoimage">
-            </a>
-            <nav role="navigation" class="nav-menu w-nav-menu">
-              <a href="index.html#home" class="main-nav-link w-nav-link">Home</a>
-              <a href="index.html#about" class="main-nav-link w-nav-link">About</a>
-              <a href="index.html#Organizers" class="main-nav-link w-nav-link">Our Team</a>
-              <a href="index.html#Conference_Tracks" class="main-nav-link w-nav-link">Conference Tracks</a>
-              <a href="index.html#contact" class="main-nav-link w-nav-link">Contact Us</a>
-              <a href="abstract.html" class="main-nav-link w-nav-link">Abstract / Submissions</a>
-              <a href="#" class="main-nav-link w-nav-link">Schedule</a>
-              <a href="register.html"><button  class="main-nav-link w-nav-link register_nav">Register</button></a>
-            </nav>     
-          </div>
-        </div>
+  <div class="main-nav-section">
+    <div data-animation="default" class="navbar w-nav" data-easing2="ease-out" data-easing="ease-in-out" data-collapse="medium" role="banner" data-no-scroll="1" data-duration="400" id="top">
+      <div class="container main-nav">
+        <div class="tietlogo"><a href="https://www.thapar.edu/" aria-current="page" class="brand w-nav-brand w--current">
+          <img src="images/logo.png" alt="Confab logo" class="logoimage">
+        </a></div>
+
+        
+        <div class="w-nav-button" id="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+        <nav role="navigation" class="nav-menu w-nav-menu" id="navMenu">
+          <a href="index.html#home" class="main-nav-link w-nav-link">Home</a>
+          <a href="index.html#about" class="main-nav-link w-nav-link">About</a>
+          <a href="index.html#Organizers" class="main-nav-link w-nav-link">Our Team</a>
+          <a href="index.html#Conference_Tracks" class="main-nav-link w-nav-link">Conference Tracks</a>
+          <a href="index.html#contact" class="main-nav-link w-nav-link">Contact Us</a>
+          <a href="abstract.html" class="main-nav-link w-nav-link">Abstract / Submissions</a>
+          <a href="" class="main-nav-link w-nav-link">Schedule</a>
+
+        </nav>  
+        <div class="nav-register-wrapper">
+          <a href="register.html">
+            <button class="main-nav-link w-nav-link register_nav">Register</button>
+          </a>
+        </div> 
+          
       </div>
+    </div>
+  </div>
     </section>
 
 <section>
@@ -54,6 +64,8 @@
   <section>
     <div class="container heading" id="Conference_Tracks">
       <h2>CONFERENCE TRACKS</h2>
+      <p class="p1">This conference invites original research
+        papers on diverse topics as mentioned below- </p>
         <ol role="list" style="text-align: justify;">
           <div class="dropdown-container">
             <div class="dropdown-column">
