@@ -15,11 +15,12 @@
   <div class="main-nav-section">
     <div data-animation="default" class="navbar w-nav" data-easing2="ease-out" data-easing="ease-in-out" data-collapse="medium" role="banner" data-no-scroll="1" data-duration="400" id="top">
       <div class="container main-nav">
-        <a href="https://www.thapar.edu/" aria-current="page" class="brand w-nav-brand w--current">
+        <div class="tietlogo"><a href="https://www.thapar.edu/" aria-current="page" class="brand w-nav-brand w--current">
           <img src="images/logo.png" alt="Confab logo" class="logoimage">
-        </a>
+        </a></div>
+
         
-        <div class="w-nav-button" id="hamburger">&#9776;</div>
+        <div class="w-nav-button" id="hamburger" onclick="toggleMenu()">&#9776;</div>
 
         <nav role="navigation" class="nav-menu w-nav-menu" id="navMenu">
           <a href="#home" class="main-nav-link w-nav-link">Home</a>
@@ -29,21 +30,18 @@
           <a href="#contact" class="main-nav-link w-nav-link">Contact Us</a>
           <a href="abstract.html" class="main-nav-link w-nav-link">Abstract / Submissions</a>
           <a href="" class="main-nav-link w-nav-link">Schedule</a>
+
+        </nav>  
+        <div class="nav-register-wrapper">
           <a href="register.html">
             <button class="main-nav-link w-nav-link register_nav">Register</button>
           </a>
-        </nav>     
+        </div> 
+          
       </div>
     </div>
   </div>
-  <script>
-    const hamburger = document.getElementById('hamburger');
-    const navMenu = document.getElementById('navMenu');
 
-    hamburger.addEventListener('click', () => {
-      navMenu.style.display = navMenu.style.display === 'block' ? 'none' : 'block';
-    });
-  </script>
   
   <div style="width: 100%; height: 100%; position: relative; background: #FFEBD9; overflow: hidden; border-top-left-radius: 25px; border-top-right-radius: 25px; border-bottom-right-radius: 25px; outline: 6px rgba(54, 88, 111, 0) solid; outline-offset: -6px">
     <img style="width: 1082.08px; height: 1203.66px; left: -164.85px; top: -205.66px; position: absolute; border-radius: 9999px" src="images/Ellipse 3.svg" />
@@ -100,9 +98,9 @@
     </div>
   </section>
 
-<section class="section hurrah">
-    <div  class="container" id="about">
-      <h2>ABOUT CONFERENCE</h2>
+<section class="section hurrah"id="about">
+    <div  class="container" >
+      <h2 >ABOUT CONFERENCE</h2>
       <div>         
         <p class="p1" style="text-align:justify;">This conference focuses on the evolving landscape of higher education in the era of
           digitization and Education 4.0. It explores the integration of emerging technologies such as
@@ -128,6 +126,8 @@
   <section>
     <div class="container heading" id="Conference_Tracks">
       <h2>CONFERENCE TRACKS</h2>
+      <p class="p1">This conference invites original research
+        papers on diverse topics as mentioned below- </p>
         <ol role="list" style="text-align: justify;">
           <div class="dropdown-container">
             <div class="dropdown-column">
@@ -358,44 +358,53 @@
                 </div>
                     <h3 class="home-hero-head"> Convener</h3>
                 <div class="orga">
-                    <div class="person">
-                        <p class = "home-hero-h3 p1"><img class ="img_org" src="images/DR. GK.JPG"><br>
-                            Dr. Gagandeep Kaur<br>Associate Head, EIED, TIET Patiala<br>
-                            
-                        </p>
+                  <div class="cor-fellow-card">
+                    <div class="cor-img-wrapper">
+                        <img class="cor-fellow-img" src="images/DR. GK.JPG" alt="Dr. Gagandeep Kaur">
                     </div>
-                    <div class ="person">
-                        <p class = "home-hero-h3 p1"><img class =img_org src="images/Dr. Amanpreet.jpg"><br>
-                            Dr. Amanpreet Kaur<br>Associate Professor, ECED, TIET Patiala<br>
-                            
-                        </p>
+                    <div class="cor-fellow-info">
+                        <p><strong>Dr. Gagandeep Kaur<br>Associate Head, EIED</strong></p>
                     </div>
+                </div>
+                <div class="cor-fellow-card">
+                </div>
+                <div class="cor-fellow-card">
+                    <div class="cor-img-wrapper">
+                        <img class="cor-fellow-img" src="images/Dr. Amanpreet.jpg" alt="Dr. Amanpreet Kaur">
+                    </div>
+                    <div class="cor-fellow-info">
+                        <p><strong>Dr. Amanpreet Kaur<br>Associate Professor, ECED</strong></p>
+                    </div>
+                </div>
                 </div>
                  <h3 class="home-hero-head"> Organizing Secratary</h3>
                  <div class="orga">
-                    <div class="person3">
-                        <p class="home-hero-h3 p1">
-                            <img class="img_org" src="images/Dr.GK.JPG"><br>
-                            Dr. Gurvinder Kaur<br>
-                            Associate Dean of Outreach, TIET Patiala<br>
-                        </p>
+                  <div class="cor-fellow-card">
+                    <div class="cor-img-wrapper">
+                        <img class="cor-fellow-img" src="images/Dr.GK.JPG" alt="Dr. Gurvinder Kaur">
                     </div>
+                    <div class="cor-fellow-info">
+                        <p><strong>Dr. Gurvinder Kaur<br>Associate Dean of Outreach, TIET Patiala</strong></p>
+                    </div>
+                </div>
                 
-                    <div class="person3">
-                        <p class="home-hero-h3 p1">
-                            <img class="img_org" src="images/DR.PN.JPG"><br>
-                            Dr. Parag Nijhawan<br>
-                            Associate Professor, TIET Patiala<br>
-                        </p>
+                <div class="cor-fellow-card">
+                    <div class="cor-img-wrapper">
+                        <img class="cor-fellow-img" src="images/DR.PN.JPG" alt="Dr. Parag Nijhawan">
                     </div>
+                    <div class="cor-fellow-info">
+                        <p><strong>Dr. Parag Nijhawan<br>Associate Professor, TIET Patiala</strong></p>
+                    </div>
+                </div>
                 
-                    <div class="person3">
-                        <p  class="home-hero-h3 p1">
-                            <img class="img_org" src="images/dr.alka.jpeg"><br>
-                            Dr. Alka Pandita<br>
-                            Manager, TIET Patiala<br>
-                        </p>
+                <div class="cor-fellow-card">
+                    <div class="cor-img-wrapper">
+                        <img class="cor-fellow-img" src="images/dr.alka.jpeg" alt="Dr. Alka Pandita">
                     </div>
+                    <div class="cor-fellow-info">
+                        <p><strong>Dr. Alka Pandita<br>Manager, TIET Patiala</strong></p>
+                    </div>
+                </div>
                 </div>
                 
 
@@ -590,6 +599,7 @@
           
         <ul style="text-align: left;">
 
+
           <li class="scomite"><b>Dr. Gagandeep Kaur</b>, Associate Head, EIED, TIET, Patiala, India</li>
           <li class="scomite"><b>Dr. Amanpreet Kaur</b>, Associate Professor, ECED, TIET, Patiala, India</li>
           <li class="scomite"><b>Dr. Gurvinder Kaur</b>, Associate Dean of Outreach, TIET, Patiala, India</li>
@@ -605,8 +615,12 @@
           <li class="scomite"><b>Dr. Deepak Mehta</b>, Associate Professor, Jain University, India</li>
           <li class="scomite"><b>Dr. Aakashdeep Kaur</b>, Assistant Professor, PEC, India</li>
           <li class="scomite"><b>Dr. Komal Singh Gill</b>, Assistant Professor, LPU, India</li>
-          <li class="scomite"><b>Mr. Harcharan Jit Singh</b>, Senior Systems Analyst IT, TIET, Patiala</li>
-          <li class="scomite"><b>Mr. Aeiman Preet Singh</b>, Sr. Associate, System Administration, TIET, Patiala</li>
+          <li class="scomite"><b>Mr. Harcharan Jit Singh</b>, Senior Systems Analyst IT, TIET, Patiala, India</li>
+          <li class="scomite"><b>Mr. Aeiman Preet Singh</b>, Sr. Associate, System Administration, TIET, Patiala, India</li>
+          <li class="scomite"><b>Dr. Krishan Kumar Saluja</b>, Professor, Department of Information Technology, University Institute of Engineering & Technology, Panjab University, India</li>
+          <li class="scomite"><b>Dr. Monika Sachdeva</b>, Professor, Computer Science, I.K. Gujral Punjab Technical University – Mohali Campus I, India</li>
+          <li class="scomite"><b>Dr. Neelam Chadda</b>, GM, NTPC, Nagpur, India</li>
+          <li class="scomite"><b>Dr. Paramjit Singh</b>, Professor (Computer), Dean Student Affairs, MRS PTU, India</li>
         </ul>
         
     
@@ -616,23 +630,26 @@
 
         <ul style="text-align: left;">
 
-          <li class="scomite"><b>Prof. Dhananjay Singh</b>, Director, GP Pant Institute of Engineering and Technology, Pauri Garhwal, India.</li>
+          <li class="scomite"><b>Dr. Dhananjay Singh</b>, Director, GP Pant Institute of Engineering and Technology, Pauri Garhwal, India.</li>
           <li class="scomite"><b>Dr. Avinash Chandra</b>, Associate Professor, TIET, Patiala, India.</li>
           <li class="scomite"><b>Dr. A K Gautam</b>, Assistant Professor, NIT Hamirpur, India.</li>
           <li class="scomite"><b>Dr. R K Arya</b>, Professor, NIT Jalandhar, India.</li>
           <li class="scomite"><b>Dr. Bhanu Pratap Singh</b>, CSIR-NPL, New Delhi, India.</li>
           <li class="scomite"><b>Dr. Pradeep Kumar</b>, Assistant Professor, IET, Lucknow, India.</li>
-          <li class="scomite"><b>Prof. Sushil Kumar Kansal</b>, Department of Chemical Engineering, Dr. S. S. Bhatnagar University Institute of Chemical Engineering & Technology, Punjab, India.</li>
+          <li class="scomite"><b>Dr. Sushil Kumar Kansal</b>, Professor, Department of Chemical Engineering, Dr. S. S. Bhatnagar University Institute of Chemical Engineering & Technology, Punjab, India.</li>
           <li class="scomite"><b>Dr. Sachin Kumar</b>, Scientist, Sardar Swaran Singh National Institute of Bio-Energy, Kapurthala, India.</li>
           <li class="scomite"><b>Dr. H. J. Pant</b>, Outstanding Scientist and Head, Isotope and Radiation Application Division, Bhabha Atomic Research Centre, Mumbai, India.</li>
-          <li class="scomite"><b>Prof. Singara Singh Kasana</b>, Central University of Haryana, Mahendergarh, India.</li>
+          <li class="scomite"><b>Dr. Singara Singh Kasana</b>, Professor, Central University of Haryana, Mahendergarh, India.</li>
           <li class="scomite"><b>Dr. Sunil Dhole</b>, CEO, Chemdist Group of Companies, India.</li>
-          <li class="scomite"><b>Prof. Rajesh Kumar Upadhyay</b>, Department of Chemical Engineering, Indian Institute of Technology (BHU) Varanasi, India.</li>
+          <li class="scomite"><b>Dr. Rajesh Kumar Upadhyay</b>, Professor, Department of Chemical Engineering, Indian Institute of Technology (BHU) Varanasi, India.</li>
           <li class="scomite"><b>Dr. Sandip Patil</b>, Director, E-Spin Nanotech Pvt. Ltd., Kanpur, India.</li>
-          <li class="scomite"><b>Prof. Ram Prakash Bharti</b>, IIT Roorkee, India.</li>
-          <li class="scomite"><b>Prof. Amit Kumar Dhiman</b>, Department of Chemical Engineering, Indian Institute of Technology Roorkee, India.</li>
-          <li class="scomite"><b>Prof. Narasimha Mangadoddy</b>, Department of Chemical Engineering, Indian Institute of Technology Hyderabad, India.</li>
-        
+          <li class="scomite"><b>Dr. Ram Prakash Bharti</b>, Professor, IIT Roorkee, India.</li>
+          <li class="scomite"><b>Dr. Amit Kumar Dhiman</b>, Professor, Department of Chemical Engineering, Indian Institute of Technology Roorkee, India.</li>
+          <li class="scomite"><b>Dr. Narasimha Mangadoddy</b>, Professor, Department of Chemical Engineering, Indian Institute of Technology Hyderabad, India.</li>
+          <li class="scomite"><b>Dr. Y P Verma</b>, Registrar, Panjab University, Chandigarh, India.</li>
+          <li class="scomite"><b>Dr. Kartikeyan Machavaram</b>, Director IIITDM Kancheepuram, Chennai, India.</li>
+          
+          
         </ul>
         
 
@@ -798,5 +815,26 @@
             slides[current].classList.add('active');
             setInterval(nextSlide, 4000); 
           </script>
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+  // Toggle the hamburger menu on click
+  document.getElementById("hamburger").addEventListener("click", function () {
+    const nav = document.getElementById("navMenu");
+    nav.classList.toggle("show");
+  });
+
+  // Close the menu when a navigation link is clicked
+  const navLinks = document.querySelectorAll(".nav-menu .main-nav-link");
+  navLinks.forEach(function(link) {
+    link.addEventListener("click", function() {
+      const nav = document.getElementById("navMenu");
+      nav.classList.remove("show"); // Close the menu
+    });
+  });
+});
+          </script>
+
+
+
     </body>
 </html>

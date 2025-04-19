@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,25 +12,35 @@
 </head>
 <body>
 <section>
-    <div class="main-nav-section" style="position: sticky;">
-        <div data-animation="default" class="navbar w-nav" data-easing2="ease-out" data-easing="ease-in-out" data-collapse="medium" role="banner" data-no-scroll="1" data-duration="400" id="top">
-          <div class="container main-nav">
-            <a href="https://www.thapar.edu/" aria-current="page" class="brand w-nav-brand w--current">
-              <img src="images/logo.png"  alt="Confab logo" class="logoimage">
-            </a>
-            <nav role="navigation" class="nav-menu w-nav-menu">
-              <a href="index.html#home" class="main-nav-link w-nav-link">Home</a>
-              <a href="index.html#about" class="main-nav-link w-nav-link">About</a>
-              <a href="index.html#Organizers" class="main-nav-link w-nav-link">Our Team</a>
-              <a href="index.html#Conference_Tracks" class="main-nav-link w-nav-link">Conference Tracks</a>
-              <a href="index.html#contact" class="main-nav-link w-nav-link">Contact Us</a>
-              <a href="abstract.html" class="main-nav-link w-nav-link">Abstract / Submissions</a>
-              <a href="#" class="main-nav-link w-nav-link">Schedule</a>
-              <a href="register.html"><button  class="main-nav-link w-nav-link register_nav">Register</button></a>
-            </nav>     
-          </div>
-        </div>
+  <div class="main-nav-section">
+    <div data-animation="default" class="navbar w-nav" data-easing2="ease-out" data-easing="ease-in-out" data-collapse="medium" role="banner" data-no-scroll="1" data-duration="400" id="top">
+      <div class="container main-nav">
+        <div class="tietlogo"><a href="https://www.thapar.edu/" aria-current="page" class="brand w-nav-brand w--current">
+          <img src="images/logo.png" alt="Confab logo" class="logoimage">
+        </a></div>
+
+        
+        <div class="w-nav-button" id="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+        <nav role="navigation" class="nav-menu w-nav-menu" id="navMenu">
+          <a href="index.html#home" class="main-nav-link w-nav-link">Home</a>
+          <a href="index.html#about" class="main-nav-link w-nav-link">About</a>
+          <a href="index.html#Organizers" class="main-nav-link w-nav-link">Our Team</a>
+          <a href="index.html#Conference_Tracks" class="main-nav-link w-nav-link">Conference Tracks</a>
+          <a href="index.html#contact" class="main-nav-link w-nav-link">Contact Us</a>
+          <a href="abstract.html" class="main-nav-link w-nav-link">Abstract / Submissions</a>
+          <a href="" class="main-nav-link w-nav-link">Schedule</a>
+
+        </nav>  
+        <div class="nav-register-wrapper">
+          <a href="register.html">
+            <button class="main-nav-link w-nav-link register_nav">Register</button>
+          </a>
+        </div> 
+          
       </div>
+    </div>
+  </div>
     </section>
 
 <section>
@@ -39,8 +50,8 @@
   <p  class="p1">
     <span> Welcome to the abstract submission for the International Conference on <b>TRANSFORMING HIGHER EDUCATION FOR FUTURE: EDUCATION 4.0 .</b></span>
   </p>
-  <p class="p1"><b>The Best Paper Award</b> will be presented to the selected authors in recognition of their outstanding contribution, celebrated for excellence in research, originality, and impact at THEC 2025.</p>
-  <p class="p1">Selected papers will be published in the following Conference Proceedings/ Indexed Journals Journals:</p>
+  <p class="p1"><b>The Best Paper Award</b> will be presented to the selected authors in recognition of their outstanding contribution, celebrated for excellence in research, originality, and impact at THEC 2025.</p>
+  <p class="p1">Selected papers will be published in the Conference Proceedings/ Indexed Journals:</p>
 </div>
 <section class="section hurrah">
     <div class="container" id="about">
@@ -53,6 +64,8 @@
   <section>
     <div class="container heading" id="Conference_Tracks">
       <h2>CONFERENCE TRACKS</h2>
+      <p class="p1">This conference invites original research
+        papers on diverse topics as mentioned below- </p>
         <ol role="list" style="text-align: justify;">
           <div class="dropdown-container">
             <div class="dropdown-column">
@@ -73,11 +86,11 @@
                 <ul>
                   <li>Team work / Group work</li>
                   <li>Peer to Peer Learning</li>
-                  <li>Student Engagement in large classrooms</li>
-                  <li>Outcome based education</li>
-                  <li>Design thinking-based approach in Teaching and Learning</li>
-                  <li>Tutoring and mentoring</li>
-                  <li>Holistic Student development</li>
+                  <li>Student Engagement in Large Classrooms</li>
+                  <li>Outcome Based Education</li>
+                  <li>Design Thinking-Based Approach in Teaching and Learning</li>
+                  <li>Tutoring and Mentoring</li>
+                  <li>Holistic Student Development</li>
                 </ul>
               </details>
       
@@ -86,20 +99,20 @@
                 <ul>
                   <li>Real-World Project Experiences</li>
                   <li>Industry-Academia Collaboration for PBL</li>
-                  <li>Integrating Projects into the Curriculum</li>
+                  <li>Integrating Projects Into the Curriculum</li>
                   <li>Evaluation Rubrics for PBL</li>
-                  <li>PBL conversions towards RIT (Research Integrated Teaching)</li>
+                  <li>PBL Conversions Towards RIT (Research Integrated Teaching)</li>
                 </ul>
               </details>
       
               <details>
                 <summary><span>Faculty Development and Support</span><span class="arrow">▶</span></summary>
                 <ul>
-                  <li>Continuous Professional development</li>
-                  <li>Curricular and pedagogical research</li>
-                  <li>Best practices for faculty-student interaction and mentorship</li>
+                  <li>Continuous Professional Development</li>
+                  <li>Curricular and Pedagogical Research</li>
+                  <li>Best Practices for Faculty-Student Interaction and Mentorship</li>
                   <li>Co-Teaching and Peer Teaching</li>
-                  <li>Reflective teaching practices</li>
+                  <li>Reflective Teaching Practices</li>
                 </ul>
               </details>
 
@@ -108,10 +121,10 @@
                 <ul>
                   <li>Student Motivation and Engagement</li>
                   <li>Mentoring and Counselling</li>
-                  <li>Career readiness and Employability skills</li>
+                  <li>Career Readiness and Employability Skills</li>
                   <li>Employability, Placement and Internship Support</li>
-                  <li>Student involvement in research projects and Start up Initiatives</li>
-                  <li>Reflection for personal and professional growth</li>
+                  <li>Student Involvement in Research Projects and Start Up Initiatives</li>
+                  <li>Reflection for Personal and Professional Growth</li>
                   <li>Life Long Learning</li>
                   <li>Role of Extracurricular Activities</li>
                 </ul>
@@ -124,11 +137,11 @@
               <details>
                 <summary><span>Artificial Intelligence (AI) in Education</span><span class="arrow">▶</span></summary>
                 <ul>
-                  <li>Role of Artificial intelligence in shaping cognitive skill learning</li>
+                  <li>Role of Artificial intelligence in Shaping Cognitive Skill Learning</li>
                   <li>Curriculum Planning for Future</li>
                   <li>Transformative Effect of AI in Education</li>
-                  <li>Benefits and Challenges related to AI in Education</li>
-                  <li>Blockchain to secure credentials</li>
+                  <li>Benefits and Challenges Related to AI in Education</li>
+                  <li>Blockchain to Secure Credentials</li>
                   <li>Cognitive Skills and Learning</li>
                   <li>Quality standards</li>
                 </ul>
@@ -139,10 +152,10 @@
                 <ul>
                   <li>E-Learning Initiatives</li>
                   <li>Adaptation to New Technologies</li>
-                  <li>Social & Digital Media</li>
+                  <li>Social and Digital Media</li>
                   <li>E-Management and Online Classroom</li>
-                  <li>Simulation & Animation, Educational Multimedia</li>
-                  <li>Interactive Whiteboard and assistive technologies</li>
+                  <li>Simulation and Animation, Educational Multimedia</li>
+                  <li>Interactive Whiteboard and Assistive Technologies</li>
                   <li>Blended Learning with Advanced Classroom Technologies</li>
                   <li>Virtual Learning for Online/Virtual Laboratories</li>
                   <li>Online Assessment</li>
@@ -161,7 +174,7 @@
                   <li>Employability</li>
                   <li>Entrepreneurship Education</li>
                   <li>University-Industry-Government Partnership</li>
-                  <li>Patents & Technology Transfer</li>
+                  <li>Patents and Technology Transfer</li>
                 </ul>
               </details>
     
@@ -174,12 +187,23 @@
                   <li>Government Policy Issues</li>
                   <li>Ethical Issues in Education</li>
                   <li>Education for Sustainability</li>
-                  <li>Leadership & Educational Management</li>
-                  <li>Cross-Border Education & Exchange Programs</li>
+                  <li>Leadership and Educational Management</li>
+                  <li>Cross-Border Education and Exchange Programs</li>
                 </ul>
               </details>
             </div>
           </div>
+        </ol>
+        <script>
+          document.querySelectorAll("details").forEach(detail => {
+            const arrow = detail.querySelector(".arrow");
+            detail.addEventListener("toggle", () => {
+            arrow.classList.toggle("rotate", detail.open);
+            });
+          });
+        </script>
+        <p class="p1">Selected papers will be published in Conference Proceedings / Indexed Journals. </p>
+    </div>
         </ol>
       </section>
         <script>
@@ -215,7 +239,7 @@
         <div style="flex: 1; min-width: 300px;">
           <h2 style="text-align: center; margin-bottom: 10px; font-size: 1.5rem;">Contact Us</h2>
           <p style="color: black; text-shadow: none; font-size: 0.95rem; line-height: 1.4;">
-            Thapar University, Bhadson Rd, Adarsh Nagar, Prem Nagar, Patiala, Punjab 147004<br><br>
+            Thapar Institute of Engineering and Technology, Bhadson Rd, Adarsh Nagar, Prem Nagar, Patiala, Punjab 147004<br><br>
             <strong>Email:</strong> thec2025@thapar.edu<br>
             <strong>Phone:</strong><br>
             Dr. Gagandeep Kaur: +91 911156 08843<br>
