@@ -4,6 +4,9 @@ html {
   font-family: sans-serif;
   scroll-behavior: smooth;
 }
+html, body {
+  overflow-x: hidden;
+}
 
 html {
   height: 100%;
@@ -207,12 +210,340 @@ button, [type="button"], [type="reset"] {
 .w-form {
   margin: 0 0 15px;
 }
+/* === GENERAL STYLES === */
+/* === NAVBAR BASE STYLES === */
 
-@media screen and (max-width: 767px) {
-  .w-nav-brand {
-    padding-left: 10px;
+.container.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  padding: 0 1em;
+  background-color: var(--confab-2023-medium-navy);
+  flex-wrap: nowrap;
+}
+
+.navbar {
+  background-color: var(--confab-2023-medium-navy);
+  color: white;
+  position: relative;
+  z-index: 1000;
+}
+
+.main-nav-section {
+  z-index: 997;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* === LOGO === */
+
+.tietlogo {
+  flex: 1;
+  text-align: center;
+}
+
+.logoimage {
+  max-width: 10em;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+
+/* === NAV MENU === */
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  justify-content: center;
+  flex: 2;
+}
+
+.main-nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75em 1em;
+  font-family: Gilroy, Arial, sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  color: var(--off-white);
+  text-decoration: none;
+  white-space: nowrap;
+  height: 100%;
+}
+
+.main-nav-link:hover {
+  color: var(--confab-2023-red);
+}
+
+
+/* === REGISTER BUTTON === */
+
+.nav-register-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.register-link {
+  background-color: var(--confab-2023-red);
+  color: white;
+  padding: 0.6em 1.2em;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1em;
+  white-space: nowrap;
+  transition: background-color 0.3s ease;
+}
+
+.register-link:hover {
+  background-color: #a9443a;
+}
+
+
+/* === HAMBURGER ICON === */
+
+#hamburger {
+  display: none;
+  font-size: 1.75em;
+  cursor: pointer;
+  color: white;
+  background: none;
+  border: none;
+}
+
+.nav-register-wrapper {
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  padding-right: 0; /* no extra space */
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.register-link {
+  background-color: var(--confab-2023-red);
+  color: white;
+  padding: 0.5em 1em;
+  font-size: 0.9em;
+  font-weight: bold;
+  border-radius: 4px;
+  text-decoration: none;
+  white-space: nowrap;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+/* === PHONE VIEW === */
+@media screen and (max-width: 768px) {
+  .container.main-nav {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 10px 15px;
+    height: auto;
+    position: relative;
+  }
+
+  #hamburger {
+    display: block;
+    justify-self: start;
+    font-size: 1.8em;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px; /* Adding a gap between hamburger and the register button */
+  }
+
+  .tietlogo {
+    justify-self: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .logoimage {
+    max-width: 7em;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .nav-register-wrapper {
+    justify-self: end;
+    display: flex;
+    align-items: center;
+    padding-right: 0.5em;
+  }
+
+  .register-link {
+    background-color: var(--confab-2023-red);
+    color: white;
+    padding: 0.5em 1em;
+    font-size: 0.95em;
+    font-weight: bold;
+    border-radius: 4px;
+    text-decoration: none;
+    width: auto;
+    white-space: nowrap;
+    text-align: center;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #FFEBD9;
+    width: 100%;
+    padding: 10px 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 999;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-menu.show {
+    display: flex !important;
+  }
+
+  .main-nav-link {
+    width: 100%;
+    padding: 1em;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    font-size: 1em;
+    text-decoration: none;
+  }
+
+  .main-nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.05);
   }
 }
+
+
+/* === TABLET RESPONSIVE STYLES === */
+@media screen and (max-width: 992px) {
+  .container.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0 1em;
+    position: relative;
+    z-index: 1000;
+  }
+
+  /* Hamburger Icon */
+  #hamburger {
+    display: block;
+    font-size: 1.75em;
+    cursor: pointer;
+    color: white;
+    background: none;
+    border: none;
+    padding-left: 0.5em; /* slight left spacing */
+    margin-right: 10px; /* Adding a gap between hamburger and the register button */
+  }
+
+  /* Logo Section */
+  .tietlogo {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 0.5em; /* shift slightly in from left */
+  }
+
+  .logoimage {
+    max-width: 9em;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  /* Register Button */
+  .nav-register-wrapper {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 0.5em;
+  }
+
+  .register-link {
+    background-color: var(--confab-2023-red);
+    color: white;
+    padding: 0.6em 1.2em;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+  }
+
+  .register-link:hover {
+    background-color: #a9443a;
+  }
+
+  /* Dropdown Navigation Menu */
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    gap: 0.5em;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color:#607D8B;  /* beige dropdown */
+    padding: 10px 0;
+    z-index: 999;
+  }
+
+  .nav-menu.show {
+    display: flex;
+  }
+
+  .main-nav-link {
+    padding: 0.75em 1.5em;
+    font-family: Gilroy, Arial, sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    color: var(--off-white);
+    text-decoration: none;
+    white-space: nowrap;
+  }
+}
+
+
+
+
+
+
+/* navbar */
+
+
+
+/* .nav-menu {
+  align-self: center;
+} */
+
+.nav-register {
+  margin-left: auto;
+}
+
+
+
+
 
 .w-richtext:before, .w-richtext:after {
   content: " ";
@@ -267,6 +598,19 @@ button, [type="button"], [type="reset"] {
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+/* navbar end */
+
 .two-column-section {
   display: flex;
   justify-content: space-between;
@@ -307,28 +651,7 @@ button, [type="button"], [type="reset"] {
   }
 }
 
-@media screen and (max-width: 991px) {
-  .w-nav[data-collapse="medium"] .w-nav-menu {
-    display: none;
-  }
-}
 
-@media screen and (max-width: 991px) {
-  .w-nav[data-collapse="medium"] .w-nav-menu {
-    display: none;
-  }
-
-  .w-nav[data-collapse="medium"] .w-nav-button {
-    display: block;
-  }
-}
-
-@media screen and (max-width: 767px) {
-
-  .w-nav-brand {
-    padding-left: 10px;
-  }
-}
 
 :root {
   --off-white: #fcfcfa;
@@ -489,38 +812,6 @@ strong {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
-.logoimage {
-  width: 250px;
-}
-
-.main-nav-section {
-  z-index: 997;
-  background-color: var(--off-white);
-  color: var(--confab-2023-medium-navy);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-.main-nav-link {
-  color: var(--off-white);
-  letter-spacing: .5px;
-  text-transform: none;
-  align-items: center;
-  margin-top: 1.6em;
-  margin-bottom: 1.6em;
-  padding: .5em .6em .55em;
-  font-family: Gilroy, Arial, sans-serif;
-  font-size: 1em;
-  font-weight: 700;
-}
-
-.main-nav-link:hover {
-  color: var(--confab-2023-red);
-  text-decoration: none;
-}
 
 
 .carousel-container {
@@ -673,20 +964,9 @@ strong {
   position: relative;
 }
 
-.container.main-nav {
-  justify-content: space-between;
-  align-items: center;
-  display: flex;
-}
 
-.navbar {
-  background-color: var(--confab-2023-medium-navy);
-  color: #a8856b1f;
-}
 
-.nav-menu {
-  align-self: center;
-}
+
 
 .centered {
   text-align: center;
@@ -768,20 +1048,11 @@ summary {
 ul {
   margin-top: 10px;
   padding-left: 20px;
-  font-size:  1 em;
+  font-size:  1em;
 }
 
-.register_nav{
-  color:white;
-  background-color:#F04E30;
-  padding:15px;
-  margin:20px;
-  border-radius:10px;
-}
-.register_nav:hover {
-  background-color: #D53B20; 
-  color:white;
-}
+
+
 
 
 .gst-fellow-container {
