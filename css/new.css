@@ -215,6 +215,8 @@ button, [type="button"], [type="reset"] {
 
 .container.main-nav {
   display: flex;
+   max-width: 100%;
+  overflow-x: hidden;
   align-items: center;
   justify-content: space-between;
   height: 70px;
