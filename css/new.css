@@ -212,17 +212,20 @@ button, [type="button"], [type="reset"] {
   margin: 0 0 15px;
 }
 /* landing page */
-
 .land_pg {
-  width: 100%;
+  margin-top: 9vh;
+  width: 100vw;
+  height: 90vh;
+  overflow: hidden;
   display: flex;
   justify-content: center;
-  overflow: hidden;
+  align-items: center;
 }
 
 .land_img {
   width: 100%;
-  height:auto;
+  height: 100%;
+  object-fit: contain;
   display: block;
 }
 
@@ -513,7 +516,7 @@ button, [type="button"], [type="reset"] {
     left: 0;
     right: 0;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: calc(100% - 17px);
+    width:100%;
   }
 
   /* Register Button */
@@ -805,11 +808,24 @@ strong {
 
 .important-dates-table td {
   padding: 4px 8px;
-  font-size: 1.3em;
+  font-size: 1.1em;
   color: #1d2c4c;
   vertical-align: top;
 }
+#about1{
+  width:50%;
+}
+.qr_div{
+  justify-content: center;
+}
+.qr{
 
+  margin-left: 10vw;
+  
+}
+.bank_details{
+  display: flex;
+}
 .important-dates-table td:first-child {
   font-weight: bold;
 }
