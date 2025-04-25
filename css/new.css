@@ -240,12 +240,11 @@ button, [type="button"], [type="reset"] {
   justify-content: space-between;
   height: 70px;
   padding: 0 1em;
-  background-color: var(--confab-2023-medium-navy);
   flex-wrap: nowrap;
 }
 
 .navbar {
-  background-color: var(--confab-2023-medium-navy);
+  background-color: #7E94A2;
   color: white;
   position: relative;
   z-index: 1000;
@@ -377,7 +376,7 @@ button, [type="button"], [type="reset"] {
   }
   .navbar {
     width:100%;
-    background-color: var(--confab-2023-medium-navy);
+    background-color: #7E94A2;
     color: white;
     position: relative;
     z-index: 1000;
