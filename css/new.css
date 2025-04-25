@@ -242,7 +242,6 @@ button, [type="button"], [type="reset"] {
   justify-content: space-between;
   height: 70px;
   padding: 0 1em;
-  background-color: var(--confab-2023-medium-navy);
   flex-wrap: nowrap;
 }
 
