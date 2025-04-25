@@ -1,4 +1,3 @@
-
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -216,7 +215,6 @@ button, [type="button"], [type="reset"] {
 
 .container.main-nav {
   display: flex;
-  overflow-x: hidden;		
   align-items: center;
   justify-content: space-between;
   height: 70px;
@@ -444,7 +442,6 @@ button, [type="button"], [type="reset"] {
     z-index: 1000;
   }
 
-
   /* Hamburger Icon */
   #hamburger {
     display: block;
@@ -652,12 +649,6 @@ button, [type="button"], [type="reset"] {
   .column {
     width: 100%;
   }
-.right-column{
-  flex-direction: column;
-}
-.right-column h2 {
-  display: none;
-}
 }
 
 

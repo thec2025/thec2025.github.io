@@ -110,4 +110,22 @@ re
         <a href="images/Accommodation Details.pdf" target="_blank">Accomodation Details</a>
         <a href="https://cmt3.research.microsoft.com/THEC2025" target="_blank">Abstract/Paper Submission</a>
       </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+document.getElementById("hamburger").addEventListener("click", function () {
+const nav = document.getElementById("navMenu");
+nav.classList.toggle("show");
+});
+
+const navLinks = document.querySelectorAll(".nav-menu .main-nav-link");
+navLinks.forEach(function(link) {
+link.addEventListener("click", function() {
+  const nav = document.getElementById("navMenu");
+  nav.classList.remove("show"); // Close the menu
+});
+});
+});
+      </script>
       
+    </body>
+</html>
