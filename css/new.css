@@ -211,23 +211,134 @@ button, [type="button"], [type="reset"] {
 .w-form {
   margin: 0 0 15px;
 }
-/* landing page */
-.land_pg {
-  margin-top: 9vh;
-  width: 100vw;
-  height: 90vh;
-  overflow: hidden;
+/* Landing Page Layout */
+/* Landing Page Layout */
+
+.maindiv {
+  line-height: 3.5vh;
+  margin-top: 0;
   display: flex;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #ffffff;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box;
+  gap: 3vw;
+  padding: 0; /* remove space that may cause right gap */
+}
+
+
+.conference-card {
+  padding: 0;
+  margin: 0;
+
+}
+
+.logo-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding: 0;
+  margin: 0;
+  line-height: 0;
+}
+
+.landing_logo{
+  height:40vh;
+  display: block;
+  object-fit: contain;
+  padding-top: 2vh;
+  padding: 0;
+  line-height: 0;
+  font-size: 0;
+  margin: -7vh 0 6.44vh 0; /* top right bottom left */
+}
+
+.bottom_logo {
+  z-index: 100;
+  height:40vh;
+  display: block;
+  object-fit: contain;
+  margin: -40vh 0 6.44vh 0; /* top right bottom left */
+  padding: 0;
+  line-height: 0;
+  font-size: 0;
+}
+
+
+
+
+/* Left - Conference Details */
+
+
+.conference-card img {
+  width: 50vw; /* increased from 120px */
+  margin-bottom: 30px;
+}
+
+.conference-card p {
+  font-size: 22px; /* increased from 16px */
+  color: #333;
+  margin: 25px 0;
+  font-weight: bold;
+}
+
+.conference-card .highlight {
+  
+  font-size: 36px; /* was 28px */
+  font-weight: bold;
+  color: #8B0000;
+  margin-bottom: 25px;
+}
+
+.conference-card .date-badge {
+  background-color: #8ca0ae;
+  display: inline-block;
+  padding: 12px 36px;
+  border-radius: 25px;
+  color: #000;
+  font-weight: bold;
+  font-size: 20px; /* was 16px */
+  margin-top: 15px;
+}
+.conference-card h2 {
+  font-size: 32px;
+  color: #8B0000;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.conference-card h3 {
+  font-size: 26px;
+  color: #333;
+  margin: 15px 0;
+}
+
+/* Right - Collage */
+.land_pg {
+  width: 58%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 .land_img {
-  width: 100%;
   height: 100%;
-  object-fit: contain;
+  width: 100%;
+  object-fit: cover;
+  object-position: right;
   display: block;
 }
+
+
 
 
 /* === GENERAL STYLES === */
@@ -259,7 +370,7 @@ button, [type="button"], [type="reset"] {
   left: 0;
   right: 0;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  width: calc(100% - 17px);
+  width: calc(100% - 15px);
 }
 
 
@@ -965,6 +1076,9 @@ strong {
   width:25%;
   height: auto;
 }
+
+
+
 
 .abstract_header {
   width: 100%;
