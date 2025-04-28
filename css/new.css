@@ -5,6 +5,35 @@ html {
   font-family: sans-serif;
   scroll-behavior: smooth;
 }
+@media (max-width: 768px) {
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .maindiv {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .maindiv {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+}
+
 html, body {
   overflow-x: hidden;
 }
@@ -27,6 +56,7 @@ body {
   font-family: Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
+  padding: 0;
 }
 
 .cor-fellow-container {
@@ -215,84 +245,57 @@ button, [type="button"], [type="reset"] {
 /* Landing Page Layout */
 
 .maindiv {
-  line-height: 3.5vh;
-  margin-top: 0;
-  display: flex;
-  font-family: Arial, sans-serif;
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  line-height: 3.2vh;
+  min-height: 100vh;
+  width: 100%;
   background: #ffffff;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  overflow: hidden;
-  box-sizing: border-box;
-  gap: 3vw;
-  padding: 0; /* remove space that may cause right gap */
+
 }
 
-
 .conference-card {
-  padding: 0;
-  margin: 0;
-
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2vw;
+  text-align: center;
 }
 
 .logo-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: start;
-  padding: 0;
-  margin: 0;
-  line-height: 0;
+  position: relative;
 }
 
-.landing_logo{
-  height:40vh;
-  display: block;
+.landing_logo {
+  height: clamp(40vh, 20vh, 25vh);
   object-fit: contain;
-  padding-top: 2vh;
-  padding: 0;
-  line-height: 0;
-  font-size: 0;
-  margin: -7vh 0 6.44vh 0; /* top right bottom left */
+  margin-bottom: -27vh; /* remove extra gap between logos */
 }
 
 .bottom_logo {
-  z-index: 100;
-  height:40vh;
-  display: block;
+  height: clamp(25vh, 18vh, 23vh);
   object-fit: contain;
-  margin: -40vh 0 6.44vh 0; /* top right bottom left */
-  padding: 0;
-  line-height: 0;
-  font-size: 0;
-}
-
-
-
-
-/* Left - Conference Details */
-
-
-.conference-card img {
-  width: 50vw; /* increased from 120px */
-  margin-bottom: 30px;
 }
 
 .conference-card p {
-  font-size: 22px; /* increased from 16px */
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+  font-size: clamp(18px, 2.5vw, 28px);
   color: #333;
-  margin: 25px 0;
-  font-weight: bold;
+  margin: 20px 0;
 }
 
 .conference-card .highlight {
-  
-  font-size: 36px; /* was 28px */
-  font-weight: bold;
+  font-family: Urbanist, sans-serif;
+  font-weight: 900;
+  font-size: clamp(24px, 4vw, 48px);
   color: #8B0000;
-  margin-bottom: 25px;
+  margin: 15px 0;
 }
 
 .conference-card .date-badge {
@@ -302,43 +305,145 @@ button, [type="button"], [type="reset"] {
   border-radius: 25px;
   color: #000;
   font-weight: bold;
-  font-size: 20px; /* was 16px */
-  margin-top: 15px;
-}
-.conference-card h2 {
-  font-size: 32px;
-  color: #8B0000;
-  margin: 10px 0;
-  font-weight: bold;
+  font-size: clamp(14px, 2vw, 20px);
+  margin-top: 20px;
 }
 
-.conference-card h3 {
-  font-size: 26px;
-  color: #333;
-  margin: 15px 0;
-}
-
-/* Right - Collage */
 .land_pg {
-  width: 58%;
-  height: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  flex: 1 1 50%;
+  height: 100vh;
   overflow: hidden;
-  margin: 0;
-  padding: 0;
 }
 
 .land_img {
-  height: 100%;
   width: 100%;
+  height: 100%;
   object-fit: cover;
-  object-position: right;
+  object-position: center;
   display: block;
 }
+@media (max-width: 768px) {
+  .maindiv {
+    grid-template-columns: 1fr; /* Single column for mobile */
+    text-align: center;
+    padding: 0; /* Remove padding */
+    gap: 2vh; /* Reduce gap between sections */
+  }
 
+  .land_pg {
+    order: -1; /* Image first */
+    margin: 0; /* No extra margins */
+    padding: 0; /* Remove padding */
+    height: 40vh; /* Reduce height of image container */
+    overflow: hidden; /* Prevent the image from overflowing */
+  }
 
+  .landing_logo {
+    height: clamp(25vh, 18vh, 22vh); /* Adjust the logo size */
+    margin-bottom: -15vh; /* Reduce the gap between logos */
+  }
+
+  .bottom_logo {
+    height: clamp(18vh, 12vh, 18vh); /* Adjust bottom logo size */
+  }
+
+  .conference-card p {
+    font-size: clamp(16px, 5vw, 22px); /* Adjust text size for readability */
+    margin: 10px 0;
+  }
+
+  .conference-card .highlight {
+    font-size: clamp(20px, 5vw, 32px); /* Adjust highlight font size */
+    margin: 10px 0;
+  }
+
+  .conference-card .date-badge {
+    font-size: clamp(14px, 3vw, 18px); /* Adjust date font size */
+    padding: 10px 30px;
+  }
+
+  .land_img {
+    width: 100%;
+    height: 100%; /* Ensure the image fits the height of its container */
+    object-fit: cover; /* Ensure image covers the container */
+    object-position: center;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+  }
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .maindiv {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    justify-content: center;
+    padding: 2vw; /* Add some padding around */
+    gap: 3vh; /* Add gap between sections */
+    width: 100%;
+    line-height: 4vh;
+  }
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+  }
+  .land_pg {
+    order: -1; /* Ensure image is on top */
+    width: 100%;
+    height: 45vh; /* Set a height for image */
+    padding: 0;
+  }
+
+  .landing_logo {
+    height: clamp(18vh, 15vh, 18vh); /* Adjust logo size */
+    margin-bottom: -13vh; /* Reduce the gap between logos */
+  }
+
+  .bottom_logo {
+    height: clamp(12vh, 10vh, 14vh); /* Adjust bottom logo size */
+  }
+
+  .conference-card {
+    text-align: center;
+    margin-top: 2vh; /* Add space between the image and the text */
+  }
+
+  .conference-card p {
+    font-size: clamp(18px, 3vw, 22px); /* Adjust text size for tablet */
+    margin: 10px 0;
+  }
+
+  .conference-card .highlight {
+    font-size: clamp(22px, 4vw, 30px); /* Adjust highlight font size */
+    margin: 10px 0;
+  }
+
+  .conference-card .date-badge {
+    font-size: clamp(14px, 3vw, 18px); /* Adjust date font size */
+    padding: 10px 25px; /* Adjust padding */
+    margin-top: 10px; /* Small margin for spacing */
+  }
+
+  .land_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image doesn't stretch */
+    object-position: center; /* Centers the image within the container */
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+}
 
 
 /* === GENERAL STYLES === */
@@ -477,6 +582,7 @@ button, [type="button"], [type="reset"] {
   box-sizing: border-box;
 }
 /* === PHONE VIEW === */
+
 @media screen and (max-width: 768px) {
   .container.main-nav {
     overflow-x: unset;   
@@ -487,6 +593,7 @@ button, [type="button"], [type="reset"] {
     height: auto;
     position: relative;
   }
+  
   .navbar {
     width:100%;
     background-color: #7E94A2;
@@ -1077,7 +1184,26 @@ strong {
   height: auto;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .carousel-container {
+    width: 80vw;      /* Slightly wider on tablets */
+    height: 50vh;     /* Little less height so it looks elegant */
+  }
 
+  .carousel-images img {
+    height: 50vh;     /* Images adjust inside container */
+  }
+
+  .carousel-buttons button {
+    padding: 10px 14px;
+    font-size: 22px;  /* Buttons slightly smaller */
+  }
+
+  .carousel-dots span {
+    width: 10px;
+    height: 10px;
+  }
+}
 
 
 .abstract_header {
