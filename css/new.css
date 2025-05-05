@@ -78,7 +78,7 @@ body {
 .cor-img-wrapper {
   width: 15vmin;  /* Dynamic width, based on viewport */
   height: 15vmin; /* Dynamic height, based on viewport */
-  border-radius: 50%;
+  border-radius: 20%;
   background-color: #eaeaea;
   display: flex;
   align-items: center;
@@ -93,7 +93,7 @@ body {
   width: 80%;  /* The image size will always be slightly smaller than its container */
   height: 80%;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 20%;
 }
 
 .cor-fellow-info {
@@ -274,7 +274,7 @@ button, [type="button"], [type="reset"] {
 .landing_logo {
   height: clamp(40vh, 20vh, 25vh);
   object-fit: contain;
-  margin-bottom: -27vh; /* remove extra gap between logos */
+  margin-bottom: -9vh; /* remove extra gap between logos */
 }
 
 .bottom_logo {
