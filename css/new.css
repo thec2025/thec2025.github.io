@@ -274,7 +274,7 @@ button, [type="button"], [type="reset"] {
 .landing_logo {
   height: clamp(40vh, 20vh, 25vh);
   object-fit: contain;
-  margin-bottom: -9vh; /* remove extra gap between logos */
+  margin-bottom: -27vh; /* remove extra gap between logos */
 }
 
 .bottom_logo {
